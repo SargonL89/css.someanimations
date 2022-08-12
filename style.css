@@ -1,0 +1,198 @@
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
+
+h3 {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h3:hover {
+    transition: .5s linear;
+    background-color: black;
+    color: blueviolet;
+}
+h3:hover span:nth-child(1){
+    transition: 1s linear;
+    margin-right: 5px;
+}
+h3:hover span:nth-child(1):after{
+    transition: 1s linear;
+    content: "'";
+}
+h3:hover span:nth-child(2){
+    transition: 1s linear;
+    margin-left: 30px;
+}
+h3:hover span {
+    color: rgb(165, 69, 255);
+    text-shadow: 0 0 3px #fff,
+    0 0 6px #fff,
+    0 0 9px #fff
+}
+
+.box {
+    border-radius: 6px;
+    width: 80px;
+    height: 40px;
+    margin: 50px auto;
+}
+
+.box-uno {
+    background-color: mediumaquamarine;
+}
+
+.box-dos {
+    background-color: mediumorchid;
+    /*Transition tiene dos valores: transition-property y transition duration*/
+    transition: all 0.8s;
+
+}
+
+.box:hover {
+    transform: scale(3);
+}
+
+.container-circle div {
+    border-radius: 70%;
+    height: 70px;
+    width: 70px;
+    margin: 20px;
+}
+
+.circle1 {
+    background-color: mediumpurple;
+    transition: all 1.5s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.circle2 {
+    background-color: mediumblue;
+    transition: all 1.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.circle3 {
+    background-color: mediumorchid;
+    transition: all 1.5s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.circle4 {
+    background-color: mediumslateblue;
+    transition: all 1.5s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
+.circle5 {
+    background-color: mediumaquamarine;
+    transition: all 1.5s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container-circle:hover .circle1,
+.container-circle:hover .circle2,
+.container-circle:hover .circle3,
+.container-circle:hover .circle4,
+.container-circle:hover .circle5 {
+    transform: translateX(200px)
+}
+
+.square-uno, .square-dos {
+    border-radius: 4px;
+    height: 150px;
+    width: 150px;
+    margin: 100px;
+    position: absolute;
+}
+
+.square-uno {
+    background-color: rgb(185, 28, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.square-dos {
+    background-color: rgb(7, 55, 167);
+    transition: all 0.8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.square-dos:hover {
+    transform: translate(20px, 20px);
+    opacity: 0.2;
+}
+
+.combinado {
+    background-color: violet;
+    height: 75px;
+    width: 75px;
+    margin: 50px auto;
+    transition: all 2s;
+}
+
+.combinado:hover {
+    transform: rotate(90deg) scale(2) translateX(120px)
+}
+
+.animaciones {
+    background-color: rgb(255, 36, 54);
+    height: 120px;
+    width: 120px;
+    margin: 50px auto;
+}
+
+.animaciones:hover {
+    animation: changeColor 4s infinite;
+}
+
+/* Fotogramas de la animacion */
+@keyframes changeColor {
+    0%  {
+        background-color: blueviolet;
+    }
+
+    15% {
+        background-color: rgba(52, 0, 100, 0.473);
+        border-radius: 80px;
+    }
+
+    25% {
+        width:  80%;
+    }
+
+    50% {
+        border: 8px solid black;
+    }
+
+    100% {
+        background-color: rgb(0, 10, 70);
+    }
+}
